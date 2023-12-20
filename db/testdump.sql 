@@ -1,0 +1,15 @@
+CREATE TABLE disease(
+       id INT PRIMARY KEY AUTO_INCREMENT,
+       name VARCHAR(45),
+       description VARCHAR(255),
+       category_id INT(11),
+       diagnosis VARCHAR(255),
+       treatment VARCHAR(255),
+       created_at DATETIME,
+       updated_at DATETIME
+);
+
+CREATE TABLE category(
+       id INT PRIMARY KEY AUTO_INCREMENT,
+       name VARCHAR(45)
+);

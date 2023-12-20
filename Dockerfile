@@ -1,7 +1,7 @@
-FROM node:21.4.0
-
-WORKDIR .
-COPY package.json .
-RUN npm install
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install -g npm@10.2.5
 COPY . .
-CMD npm start
+EXPOSE 5000
+CMD ["npm", "start"]
