@@ -17,3 +17,20 @@ $ cd disease-simple-crud
 $ cp .env.example .env
 ```
 
+Running Docker Compose
+```
+$ docker-compose build #create image
+$ docker-compose up -d #create container
+```
+
+DB Execute
+```
+Create new DB: disease
+Running table create: db/testdump.sql
+```
+
+Running Application
+```
+http://localhost:5000
+can you download on /postman
+```
